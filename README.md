@@ -1,1 +1,3 @@
-# wp-comfy
+# Comfy - WordPress Theme
+
+My Wordpress theme.
