@@ -24,7 +24,7 @@ function comfy_customize_register( $wp_customize ) {
 	) );
 	$wp_customize->add_setting( 'comfy_homefeature' );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'comfy_homefeature', array(
-		'label'    => __( 'Logo', 'comfy' ),
+		'label'    => __( 'Feature image', 'comfy' ),
 		'section'  => 'comfy_homefeature_section',
 		'settings' => 'comfy_homefeature',
 	) ) );
@@ -117,7 +117,16 @@ function comfy_customize_register( $wp_customize ) {
 				'description'   => __('Enter Description', 'comfy'),
 			)
 		);
+		
+		// changed by: hunt
+		$wp_customize->add_setting( 'comfy_img_upload' );
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'comfy_img_upload', array(
+			'label'    => __( 'Image Upload', 'comfy' ),
+			'section'  => 'comfy_about_section',
+			'settings' => 'comfy_img_upload',
+		) ) );
 
+		/*
 		$wp_customize->add_setting( 'comfy_img_upload', array( 
 					'default'        => 'image.jpg',
         			'capability'     => 'edit_theme_options',
@@ -132,6 +141,7 @@ function comfy_customize_register( $wp_customize ) {
 		        )
 		    )
 		);
+		*/
 
 /*------------------------------------------------------------------------*/
     /*  Section: Promo

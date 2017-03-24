@@ -208,6 +208,22 @@
   <!--BANNER START-->
   <div id="banner">
     <div id="home-banner" class="owl-carousel owl-theme">
+
+      <!-- sample: start -->
+      <div class="item">
+        <?php if ( get_theme_mod( 'comfy_homefeature' ) ) : ?>
+            <img src="<?php echo esc_url( get_theme_mod( 'comfy_homefeature' ) ); ?>" alt="img">
+		    <?php endif; ?>
+        <div class="caption">
+          <div class="container">
+            <span>nO ONE COMES TO THE fATHER EXCEPT THROUGH ME.</span>
+            <h1>I AM THE WAY, THE TRUTH</h1>
+            <div class="btn-row"> <a href="sermons-detail.html" class="btn-style-1">Sermon Series</a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- sample: end -->
+      
       <div class="item"> <img src="<?php bloginfo( 'template_url' ); ?>/images/banner-style-3-img-1.jpg" alt="img">
         <div class="caption">
           <div class="container"> <span>nO ONE COMES TO THE fATHER EXCEPT THROUGH ME.</span>
